@@ -1,0 +1,9 @@
+analysed/videos
+analysed/figures
+analysed/tables
+analysed/images
+analysed/videos
+.Rproj.user
+circular_statistics/figures
+legacy
+/__pycache__/
