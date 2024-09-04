@@ -1,33 +1,9 @@
-Code for behaviour tracking anlaysis of experiments for paper "   "
+Code for behaviour tracking anlaysis of experiments for paper [1].
 
-An intial code for preprocessing the video using deeplabcut
 -----------------------------------------------------------------------------------------------------------------------
+Code for data analysis used in [1] 
+
 ----------------------------------------------------------------------------------------------------------------------
-
---Preprocessing folder: Here is the preprocessed data using deep lab cut ct [ref]. It is quite easy to use this.
-Here the code in preprocessing_dlv.ioynb is the code used for generating the dlc filtered tables we will use 
-for the analysis. The filtered dlc videos where generated using the dlc gui, it seems that there is a bug in the Corresponding dlc
-function that does not recognize properly the video path, for this just run the following to run the GUI:
-
-     python -m deeplabcut
-
-In case you want to train the model from zero the raw data can be found in:
-- https://saco.csic.es/apps/files/files/217962888?dir=/zic2/code_data_zic2/data/raw_data/prey_hunting
-
-and the videos used for traning the model in our case:
-
-- https://saco.csic.es/apps/files/files/222213335?dir=/zic2/code_data_zic2/data/raw_data/prey_hunting/videos_for_model_training
-
-The labelled data and trained model used for the analysis be found in:
-
--  https://saco.csic.es/apps/files/files/222227744?dir=/zic2/code_data_zic2/data/raw_data/prey_hunting/dlc_preprocessed_data
-
-------------------------------------------------------------------------------------------------------------------------
----------------------------------------------
----------------------------------------------
-
-
-The analysis is divided in two main scripts:
 
 1) A preprocessing script:
      The script preprocessing.ipynb  is used to preprocess the data of each experiment. The raw data is called from 
@@ -58,6 +34,33 @@ The analysis is divided in two main scripts:
      - figure_orientation_distance: Ditance to cricket and head orientation figures 
      - circular_statistics forlder: r code for figure 6 j-k.
 
+
+-----------------------------------------------------------------------------------------------------------------------
+Code for preprocessing the video using deeplabcut
+
+----------------------------------------------------------------------------------------------------------------------
+
+--Preprocessing folder: Here is the preprocessed data using deep lab cut [ref].
+Here the code in preprocessing_dlc.ipynb is the code used for generating the dlc filtered tables we will use 
+for the analysis. The filtered dlc videos where generated using the dlc gui, it seems that there is a bug in the Corresponding dlc
+function that does not recognize properly the video path, for this just run the following to run the GUI:
+
+     python -m deeplabcut
+
+In case you want to train the model from zero the raw data can be found in:
+- https://saco.csic.es/apps/files/files/217962888?dir=/zic2/code_data_zic2/data/raw_data/prey_hunting
+
+and the videos used for traning the model in our case:
+
+- https://saco.csic.es/apps/files/files/222213335?dir=/zic2/code_data_zic2/data/raw_data/prey_hunting/videos_for_model_training
+
+The labelled data and trained model used for the analysis be found in:
+
+-  https://saco.csic.es/apps/files/files/222227744?dir=/zic2/code_data_zic2/data/raw_data/prey_hunting/dlc_preprocessed_data
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 Environments:
 - analysis.yml: For all analysis
      conda env create -n analysis.yml
@@ -66,7 +69,9 @@ Environments:
      conda env create -n tf.yml
 
 
-
 Author:                             Arturo José Valiño Pérez
 
 Corresponding author:              Arturo José Valiño Pérez (arturo-jose.valino@incipit.csic.es)
+
+
+1. Genetic Rewiring of Retinothalamic Neurons Induces Ocular Dominance Columns in mice and Enhances Binocular Vision and Predatory Behaviors 

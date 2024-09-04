@@ -198,7 +198,12 @@ def data_summary(df:pd.DataFrame,col_name:str,group_by:list):
                     q2= (col_name,lambda x: x.quantile(0.50) ),
                     median= (col_name,lambda x: x.median()),
                     q3=(col_name,lambda x: x.quantile(0.75)),
-                    ICR=(col_name,lambda x:x.quantile(0.75)- x.quantile(0.25)),
+                    IQR=(col_name,lambda x:x.quantile(0.75)- x.quantile(0.25)),
                     max=(col_name,np.max),
                     min=(col_name,np.min)))
+    
+    summary['low_bound_tukey']=summary['q1']-3*summary['IQR']
+    summary['upper_bound_tukey']=summary['q3']+3*summary['IQR']
+
     display(summary)
+    return summary
