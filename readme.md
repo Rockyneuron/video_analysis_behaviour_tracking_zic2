@@ -1,4 +1,4 @@
-# Behavioral Tracking Analysis Code Repository
+## Mouse Predatory Behavior Analysis Pipeline
 
 Code for behaviour tracking analysis of experiments for paper [1].
 
