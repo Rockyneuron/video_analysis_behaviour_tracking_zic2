@@ -1,6 +1,6 @@
 ## Mouse Predatory Behavior Analysis Pipeline
 
-Code for behaviour tracking analysis of experiments for paper [1].
+Code for behaviour tracking analysis of experiments for paper "Induced emergence of ocular dominance columns enhances mouse binocular vision and hunting behavior".
 
 ![Mouse chasing cricket](docs/assets/chasing.png)
 
